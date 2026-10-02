@@ -3,53 +3,106 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+
+    <title>Molly's Responsive Portfolio</title>
 </head>
 <body>
     <header>
         <div class="logo">
             <img src="./images/logo.png" alt="Logo">
-            <a href="index.html">Tagline</a>
+            <a href="index.html">MOLLY</a>
         </div>
         <nav>
             <ul>
                 <li><a href="./index.html">Home</a></li>
                 <li><a href="./about.html">About</a></li>
+                <li><a href="./skills.html">Skills</a></li>
                 <li><a href="./contact.html">Contact</a></li>
             </ul>
         </nav>
     </header>
     <main>
         <section class="intro">
-            <p>lorum ipsum dolor sit amet Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores quam harum nemo, aperiam temporibus consectetur, corrupti voluptate numquam</p>
+            <div class="intro-content">
+                <h1>From Soldier to Developer</h1>
+                <p>
+                    After nearly five years of experience in the British Army, I'm building a new set of skills for my next
+                    chapter. I'm currently learning web development, starting with HTML and CSS and gradually working towards
+                    becoming a confident developer.
+                </p>
+            </div>
             <div class="links">
-                <a class="link1" href="#">Link 1</a>
-                <a class="link2" href="#">Link 2</a>
-                <a class="link3" href="#">Link 3</a>
+                <a class="link1" href="#myjourney">My Journey</a>
+                <a class="link2" href="#what-im-learning">What I'm Learning</a>
+                <a class="link3" href="#myprojects">My Projects</a>
             </div>
         </section>
+
         <section class="img-section">
-            <img src="image1.jpg" alt="Image 1">
-            <p>Paragraph next to the image.</p>
+            <div class="image">
+                <img src="./images/army-photo.png" alt="Image 1">
+            </div>
+            <div class="main-content">
+                <h2 id="myjourney">My Journey</h2>
+                <p>
+                    My background is in Army administration and personnel support, where organisation,
+                    communication and attention to detail are a big part of everyday work. Over the
+                    past few years I've developed experience working with people, managing information
+                    and keeping things organised in a busy environment.
+                </p>
+                <p>
+                    I'm now taking those existing skills and applying them to technology as I prepare
+                    for my next career.
+                </p>
+            </div>
         </section>
-        <section class="card-container">
+
+        <section class="card-container" id="what-im-learning">
             <div class="card">
-                <img src="image1.jpg" alt="Image 1">
-                <p>Paragraph next to the image.</p>
+                <img src="./images/html-image.png" alt="html logo">
+                <p>
+                    I'm learning how to build the structure of webpages using semantic HTML,
+                    including headings, paragraphs, links, images, navigation and forms.
+                </p>
             </div>
             <div class="card">
-                <img src="image1.jpg" alt="Image 1">
-                <p>Paragraph next to the image.</p>
+                <img src="./images/css-image.png" alt="css logo">
+                <p>
+                    I'm learning how to style webpages and create layouts using Flexbox,
+                    spacing, typography, colours, backgrounds and responsive design.
+                </p>
             </div>
             <div class="card">
-                <img src="image1.jpg" alt="Image 1">
-                <p>Paragraph next to the image.</p>
+                <img src="./images/responsive-image.png" alt="responsive design logo">
+                <p>
+                    I'm learning how to make websites adapt to different screen sizes
+                    using flexible layouts and CSS media queries.
+                </p>
             </div>
         </section>
+
         <section class="img-section">
-            <img src="image1.jpg" alt="Image 1">
-            <p>Paragraph next to the image.</p>
+            <div class="main-content second-section">
+                <h2 id="myprojects">My Projects</h2>
+                <p>
+                    I'm putting my learning into practice by building projects rather than
+                    relying solely on tutorials. My projects have included personal websites,
+                    portfolio pages and practical webpages using HTML and CSS.
+                </p>
+                <p>
+                    Each project gives me an opportunity to practise what I've learned,
+                    solve problems independently and understand how the code fits together.
+                </p>
+            </div>
+            <div class="image">
+                <img src="./images/civvy-photo.png" alt="Headshot of molly">
+            </div>
         </section>
     </main>
     <footer>
