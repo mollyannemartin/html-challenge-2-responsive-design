@@ -57,8 +57,25 @@ nav a:hover {
     padding-bottom: 10px;
 }
 
-/* Mobile Header/Navigation Styles */
+/* Responsive Header/Navigation Styles */
 
+@media (max-width: 750px) {
+    header {
+        flex-direction: column;
+    }
+
+    .logo {
+        margin-bottom: 10px;
+        align-self: flex-start;
+    }
+}
+
+@media (max-width: 450px) {
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
 
 /*/////////////// Section/Main content Styles //////////////*/
 /*/////////////// Intro Section //////////////*/
@@ -132,6 +149,39 @@ nav a:hover {
     background-color: #217A70;
 }
 
+/* responsive intro Style */
+
+@media (max-width: 750px) {
+    .intro {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .intro > * {
+        width: 100%;
+    }
+
+    .intro-content h1 {
+        font-size: 2rem;
+    }
+
+    .links a {
+        width: 80%;
+    }
+
+    .intro-content {
+        border-right: none;
+        border-bottom: 2px solid #b6bec4;
+        padding-bottom: 20px;
+    }
+}
+
+@media (max-width: 450px) {
+    .intro-content h1 {
+        font-size: 1.7rem;
+    }
+}
+
 /*/////////////// Image Section Styles //////////////*/
 
 .img-section {
@@ -153,7 +203,7 @@ nav a:hover {
 }
 
 .image img {
-    max-width: 400px;
+    max-width: 50%;
     height: auto;
 }
 
@@ -177,6 +227,46 @@ nav a:hover {
     color: #172A3A;
     border-bottom: 2px solid #b6bec4;
     padding-bottom: 10px;
+}
+
+/* responsive image section Style */
+
+@media (max-width: 1000px) {
+    .image {
+        flex: 1;
+    }
+
+    .main-content {
+        flex: 2;
+    }
+}
+
+@media (max-width: 750px) {
+    .img-section {
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .main-content {
+        border-left: none;
+        border-right: none;
+        width: 100%;
+        align-items: center;
+    }
+
+    .second-img-section {
+        flex-direction: column-reverse;
+    }
+
+    .main-content h2 {
+        font-size: 1.7rem;
+    }
+}
+
+@media (max-width: 450px) {
+    .main-content h2 {
+        font-size: 1.5rem;
+    }
 }
 
 /*/////////////// Card Styles //////////////*/
@@ -214,16 +304,35 @@ nav a:hover {
     border-left: 2px solid #b6bec4;
 }
 
+/* responsive card section Style */
 
+@media (max-width: 1000px) {
+    .card-container {
+        flex-direction: column;
+        gap: 20px;
+    }
 
-/*/////////////// Styles //////////////*/
-/*/////////////// Styles //////////////*/
-/*/////////////// Styles //////////////*/
-/*/////////////// Styles //////////////*/
-/*/////////////// Styles //////////////*/
-/*/////////////// Styles //////////////*/
+    .card img {
+        width: 10%;
+    }
+}
 
+@media (max-width: 500px) {
+    .card {
+        flex-direction: column;
+        text-align: center;
+    }
 
+    .card p {
+        border-left: none;
+        border-top: 2px solid #b6bec4;
+        padding: 15px 0 0 0;
+    }
+
+    .card img {
+        width: 20%;
+    }
+}
 
 /*/////////////// Footer Styles //////////////*/
 
